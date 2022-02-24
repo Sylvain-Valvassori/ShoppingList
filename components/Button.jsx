@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Text, StyleSheet, Pressable, View } from 'react-native';
+import { Text, StyleSheet, Pressable, View, Image } from 'react-native';
 import { Colors } from '../assets/variables';
 //---------------------------------------------
 import TinyLogoFacebook from '../assets/images/Facebook.svg';
@@ -22,6 +22,8 @@ export default function Button(props) {
     <Pressable style={styles.button} onPress={props.onPress}>
       <Text style={styles.container}>
         {/* tinyIcon */}
+
+
         <Text style={styles.text}>{props.title}</Text>
       </Text>
     </Pressable>
